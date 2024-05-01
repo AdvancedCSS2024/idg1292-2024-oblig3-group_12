@@ -1,1 +1,13 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "BubblegumSans";
+}
+
+@font-face {
+  font-family: "BubblegumSans";
+  src: local("Bubblegum Sans"), local("BubblegumSans-Regular"), url("/assets/fonts/BubblegumSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}/*# sourceMappingURL=style.css.map */
