@@ -1,4 +1,5 @@
 // global reset
+@use "../utilities/variables" as *;
 
 * {
   margin: 0;
@@ -7,4 +8,184 @@
 
   // apply font-family to all elements
   font-family: "BubblegumSans";
+   
+  // Hide scrollbar
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  color: $white;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+  }
+  &#section1, &#section2 {
+    background: linear-gradient(lightskyblue, blue);
+  }
+  &#section3, &#section4, &#section5 {
+    background: linear-gradient($ocean1, $ocean2);
+  }
+  &#section5 {
+    justify-content: center;
+  }
+  &#section6 {
+    background-color: $wood;
+  }
+  // Section 5 elements
+  &__fish2 {
+    z-index: 2;
+    width: 40vw;
+    height: 40vw;
+    top: 7vw;
+    left: 44.5vw;
+  }
+  &__fishingHook {
+    width: 30vw;
+    height: 30vw;
+    left: 30vw;
+  }
+  &__worm {
+    width: 3vw;
+    height: 3vw;
+    top: 25.5vw;
+    left: 45.1vw;
+  }
+  &__text5 {
+    align-self: flex-end;
+    margin-bottom: 4rem;
+  }
+  // Section 6 elements
+  &__cookedFish {
+    z-index: 2;
+    width: 55vw;
+    height: 55vw;
+    top: 40vw;
+    left: 56%;
+    transform: translate(-50%, -50%);
+  }
+  &__dinnerPlate {
+    width: 60vw;
+    height: 60vw;
+    top: 38vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__fork {
+    width: 50vw;
+    height: 50vw;
+    top: 14vw;
+    right: 61vw;
+  }
+  &__knife {
+    width: 50vw;
+    height: 50vw;
+    top: 14vw;
+    left: 61vw;
+  }
+  &__text6 {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+.section {
+    // Section 5 elements
+    &__fish2 {
+      width: 400px;
+      height: 400px;
+      top: 230px;
+      left: 44.5vw;
+    }
+    &__fishingHook {
+      width: 30vw;
+      height: 30vw;
+      left: 30vw;
+    }
+    &__worm {
+      width: 3vw;
+      height: 3vw;
+      top: 25.5vw;
+      left: 45.1vw;
+    }
+    &__text5 {
+    }
+    // Section 6 elements
+    &__cookedFish {
+      width: 40vw;
+      height: 40vw;
+      top: 9vw;
+      left: 17vw;
+      transform: none;
+    }
+    &__dinnerPlate {
+      width: 45vw;
+      height: 45vw;
+      top: 5vw;
+      left: 10vw;
+      transform: none;
+    }
+    &__fork {
+      width: 35vw;
+      height: 35vw;
+      top: 11vw;
+      right: 76vw;
+    }
+    &__knife {
+      width: 35vw;
+      height: 35vw;
+      top: 11vw;
+      left: 41vw;
+    }
+    &__text6 {
+      width: 34vw;
+      top: 4vw;
+      right: 3vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .section {
+    // Section 6 elements
+    &__cookedFish {
+      width: 619px;
+      height: 619px;
+      top: 140px;
+      left: 263px;
+      transform: none;
+    }
+    &__dinnerPlate {
+      width: 697px;
+      height: 697px;
+      top: 77px;
+      left: 155px;
+      transform: none;
+    }
+    &__fork {
+      width: 100px;
+      height: 543px;
+      top: 170px;
+      left: 51px;
+    }
+    &__knife {
+      width: 100px;
+      height: 543px;
+      top: 170px;
+      left: 856px;
+    }
+    &__text6 {
+      width: 34vw;
+      top: 4vw;
+      right: 3vw;
+    }
+  }
 }
