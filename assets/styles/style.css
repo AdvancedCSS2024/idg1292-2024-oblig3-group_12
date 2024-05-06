@@ -5,6 +5,54 @@
   font-family: "BubblegumSans";
 }
 
+#fact-4 {
+  max-width: 32%;
+  max-height: 5%;
+  margin-top: 2%;
+  text-align: center;
+  color: #b8b8b8;
+}
+
+.section-4 {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#07319D, #030F2E);
+  position: relative;
+  overflow: hidden;
+}
+.section-4 .svg-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.section-4 .svg-container-2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+.section-4 .Microplastic {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.section-4 .fish {
+  display: flex;
+  justify-content: end;
+}
+.section-4 .svg-container-3 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 6%;
+}
+.section-4 .svg-container-4 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
 @font-face {
   font-family: "BubblegumSans";
   src: local("Bubblegum Sans"), local("BubblegumSans-Regular"), url("/assets/fonts/BubblegumSans-Regular.woff2") format("woff2");
