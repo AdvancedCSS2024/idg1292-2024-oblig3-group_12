@@ -10,60 +10,53 @@
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <!-- Import scripts -->
         <script src="assets/scripts/index.js" type="module" defer></script>
-        <script src="assets/scripts/section5.js" type="module" defer></script>
+        <script src="assets/scripts/section_5.js" type="module" defer></script>
     </head>
     <body>
-        <section class="section" id="section1"></section>
-        <section class="section" id="section2"></section>
-        <section class="section" id="section3"></section>
-        <section class="section" id="section4"></section>
         <section class="section" id="section5">
-            <img
-                src="assets/svgs/fishing/Fish.svg"
-                alt="Fish"
-                class="section__fish2"
-            />
-            <img
-                src="assets/svgs/fishing/fishHook.svg"
-                alt="Fishing hook"
-                class="section__fishingHook"
-            />
-            <img
-                src="assets/svgs/fishing/Worm.svg"
-                alt="Worm"
-                class="section__worm"
-            />
+            <div class="hookFish">
+                <img
+                    src="assets/svgs/fishing/fishhook&worm.svg"
+                    alt="Fishing hook"
+                    class="hookFish__fishHookWorm animateHookedFish"
+                />
+                <img
+                    src="assets/svgs/fishing/Fish.svg"
+                    alt="Fish"
+                    class="hookFish__fish2 animateHookedFish"
+                />
+            </div>
             <p class="section__text5">
                 1 in 3 fish caught for human consumption now contains plastic.
             </p>
         </section>
         <section class="section" id="section6">
             <img
-                src="assets/svgs/fishing/deadFish.svg"
+                src="assets/svgs/fishing/cookedFish.svg"
                 alt="Cooked fish"
                 class="section__cookedFish"
             />
-            <img
-                src="assets/svgs/kitchen/Plate.svg"
-                alt="Dinner plate"
-                class="section__dinnerPlate"
-            />
-            <img
-                src="assets/svgs/kitchen/Fork.svg"
-                alt="Fork"
-                class="section__fork"
-            />
-            <img
-                src="assets/svgs/kitchen/Knife.svg"
-                alt="Knife"
-                class="section__knife"
-            />
+            <div class="dinner">
+                <img
+                    src="assets/svgs/kitchen/Fork.svg"
+                    alt="Fork"
+                    class="dinner__fork"
+                />
+                <img
+                    src="assets/svgs/kitchen/Plate.svg"
+                    alt="Dinner plate"
+                    class="dinner__dinnerPlate"
+                />
+                <img
+                    src="assets/svgs/kitchen/Knife.svg"
+                    alt="Knife"
+                    class="dinner__knife"
+                />
+            </div>
             <p class="section__text6">
-                Humans constantly inhale and ingest microplastic through
-                contaminated seafood, including fish and shellfish.
-                Additionally, microplastics have been found in tap water,
-                bottled water, and even commonly consumed beverages, such as
-                beer and salt.
+                Humans constantly ingest microplastic through contaminated
+                seafood, including fish and shellfish. Microplastics have also
+                been found in tap water, bottled water, and beer.
             </p>
         </section>
     </body>

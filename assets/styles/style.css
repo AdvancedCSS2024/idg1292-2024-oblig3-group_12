@@ -28,146 +28,107 @@
 }
 .section#section5 {
   justify-content: center;
+  text-align: center;
 }
 .section#section6 {
   background-color: #4A2800;
 }
-.section__fish2 {
-  z-index: 2;
-  width: 40vw;
-  height: 40vw;
-  top: 7vw;
-  left: 44.5vw;
-}
-.section__fishingHook {
-  width: 30vw;
-  height: 30vw;
-  left: 30vw;
-}
-.section__worm {
-  width: 3vw;
-  height: 3vw;
-  top: 25.5vw;
-  left: 45.1vw;
-}
 .section__text5 {
   align-self: flex-end;
-  margin-bottom: 4rem;
+  margin-bottom: 40px;
 }
 .section__cookedFish {
   z-index: 2;
-  width: 55vw;
-  height: 55vw;
-  top: 40vw;
-  left: 56%;
-  transform: translate(-50%, -50%);
-}
-.section__dinnerPlate {
-  width: 60vw;
-  height: 60vw;
-  top: 38vw;
+  width: 10.5rem;
+  height: 4.5rem;
+  top: 7.5rem;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
-.section__fork {
-  width: 50vw;
-  height: 50vw;
-  top: 14vw;
-  right: 61vw;
-}
-.section__knife {
-  width: 50vw;
-  height: 50vw;
-  top: 14vw;
-  left: 61vw;
+  transform: translate(-50%);
 }
 .section__text6 {
   position: absolute;
-  bottom: 5%;
-  width: 100%;
+  bottom: 4%;
+  width: 100vw;
+  left: 50%;
+  transform: translate(-50%);
 }
 
-@media screen and (min-width: 1000px) {
-  .section__fish2 {
-    width: 400px;
-    height: 400px;
-    top: 230px;
-    left: 44.5vw;
+.hookFish__fish2 {
+  z-index: 2;
+  width: 18rem;
+  height: 10rem;
+  top: 12.2rem;
+  left: 6.8rem;
+}
+.hookFish__fishHookWorm {
+  width: 3.5rem;
+  height: 30rem;
+  left: 5rem;
+  top: -11rem;
+}
+
+.dinner {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.dinner img {
+  position: static;
+}
+.dinner__dinnerPlate {
+  width: 15rem;
+  height: 15rem;
+}
+.dinner__fork, .dinner__knife {
+  width: 4rem;
+  height: 12rem;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 20px;
   }
-  .section__fishingHook {
-    width: 30vw;
-    height: 30vw;
-    left: 30vw;
+  .hookFish {
+    position: absolute;
+    left: 30%;
+    transform: translate(-30%);
   }
-  .section__worm {
-    width: 3vw;
-    height: 3vw;
-    top: 25.5vw;
-    left: 45.1vw;
+  .hookFish__fish2, .hookFish__fishHookWorm {
+    transform: none;
+  }
+  .hookFish__fish2 {
+    left: 34px;
+  }
+  .hookFish__fishHookWorm {
+    left: 0;
   }
   .section__cookedFish {
-    width: 40vw;
-    height: 40vw;
-    top: 9vw;
-    left: 17vw;
-    transform: none;
+    width: 14rem;
+    height: 6rem;
+    top: 9.5rem;
   }
-  .section__dinnerPlate {
-    width: 45vw;
-    height: 45vw;
-    top: 5vw;
-    left: 10vw;
-    transform: none;
+  .dinner__dinnerPlate {
+    width: 20rem;
+    height: 20rem;
   }
-  .section__fork {
-    width: 35vw;
-    height: 35vw;
-    top: 11vw;
-    right: 76vw;
-  }
-  .section__knife {
-    width: 35vw;
-    height: 35vw;
-    top: 11vw;
-    left: 41vw;
-  }
-  .section__text6 {
-    width: 34vw;
-    top: 4vw;
-    right: 3vw;
+  .dinner__fork, .dinner__knife {
+    width: 4.5rem;
+    height: 16rem;
   }
 }
-@media screen and (min-width: 1550px) {
-  .section__cookedFish {
-    width: 619px;
-    height: 619px;
-    top: 140px;
-    left: 263px;
-    transform: none;
+@media screen and (min-width: 1400px) {
+  .hookFish {
+    left: 40%;
+    transform: translate(-40%);
   }
-  .section__dinnerPlate {
-    width: 697px;
-    height: 697px;
-    top: 77px;
-    left: 155px;
-    transform: none;
-  }
-  .section__fork {
-    width: 100px;
-    height: 543px;
-    top: 170px;
-    left: 51px;
-  }
-  .section__knife {
-    width: 100px;
-    height: 543px;
-    top: 170px;
-    left: 856px;
-  }
-  .section__text6 {
-    width: 34vw;
-    top: 4vw;
-    right: 3vw;
+}
+@media screen and (min-width: 2000px) {
+  .hookFish {
+    left: 45%;
+    transform: translate(-45%);
   }
 }
 @font-face {
@@ -177,13 +138,7 @@
   font-display: swap;
 }
 p {
-  font-size: 2rem;
+  font-size: 37px;
   padding-inline: 1rem;
-  max-width: 1000px;
-}
-
-@media screen and (min-width: 350px) {
-  p {
-    font-size: 2.62rem;
-  }
+  max-width: 1200px;
 }

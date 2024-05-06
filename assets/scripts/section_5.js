@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     gsap.from('.section__fish2', {
         scrollTrigger: {
             trigger: '.section__fish2',
@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
         y: '100',
         ease: 'power2',
     });
-    gsap.to('.section__fishingHook', {
+    gsap.to('.section__fishHookWorm', {
         scrollTrigger: {
-            trigger: '.section__fishingHook',
+            trigger: '.section__fishHookWorm',
             toggleActions: 'restart none none none',
             markers: true,
         },
@@ -42,4 +42,27 @@ document.addEventListener('DOMContentLoaded', () => {
         y: '-100%',
         ease: 'power2',
     }).delay(3.2);
-});
+});*/
+
+/*const timeline = gsap.timeline({ defaults: { ease: 'power2' } });
+timeline
+    .from('.section__fish2', {
+        scrollTrigger: {
+            trigger: '.section__fish2',
+            toggleActions: 'restart none none none',
+            markers: true,
+        },
+        duration: 3,
+        x: '200%',
+        y: '100',
+    })
+    .to('.animateHookedFish', {
+        scrollTrigger: {
+            trigger: '.section__fishHookWorm',
+            toggleActions: 'restart none none none',
+            markers: true,
+        },
+        duration: 2,
+        y: '-100%',
+    });
+*/

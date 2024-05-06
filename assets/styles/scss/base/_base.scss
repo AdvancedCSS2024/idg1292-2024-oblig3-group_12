@@ -34,158 +34,121 @@
   }
   &#section5 {
     justify-content: center;
+    text-align: center;
   }
   &#section6 {
     background-color: $wood;
   }
   // Section 5 elements
-  &__fish2 {
-    z-index: 2;
-    width: 40vw;
-    height: 40vw;
-    top: 7vw;
-    left: 44.5vw;
-  }
-  &__fishingHook {
-    width: 30vw;
-    height: 30vw;
-    left: 30vw;
-  }
-  &__worm {
-    width: 3vw;
-    height: 3vw;
-    top: 25.5vw;
-    left: 45.1vw;
-  }
   &__text5 {
     align-self: flex-end;
-    margin-bottom: 4rem;
+    margin-bottom: 40px;
   }
   // Section 6 elements
   &__cookedFish {
     z-index: 2;
-    width: 55vw;
-    height: 55vw;
-    top: 40vw;
-    left: 56%;
-    transform: translate(-50%, -50%);
-  }
-  &__dinnerPlate {
-    width: 60vw;
-    height: 60vw;
-    top: 38vw;
+    width: 10.5rem;
+    height: 4.5rem;
+    top: 7.5rem;
     left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  &__fork {
-    width: 50vw;
-    height: 50vw;
-    top: 14vw;
-    right: 61vw;
-  }
-  &__knife {
-    width: 50vw;
-    height: 50vw;
-    top: 14vw;
-    left: 61vw;
+    transform: translate(-50%);
   }
   &__text6 {
     position: absolute;
-    bottom: 5%;
-    width: 100%;
+    bottom: 4%;
+    width: 100vw;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 
-@media screen and (min-width: 1000px) {
-.section {
-    // Section 5 elements
+// Section 5 elements
+.hookFish {
+  &__fish2 {
+    z-index: 2;
+    width: 18rem;
+    height: 10rem;
+    top: 12.2rem;
+    left: 6.8rem;
+  }
+  &__fishHookWorm {
+    width: 3.5rem;
+    height: 30rem;
+    left: 5rem;
+    top: -11rem;
+  }
+}
+
+// Section 6 elements
+.dinner {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  img {
+    position: static;
+  }
+  &__dinnerPlate {
+    width: 15rem;
+    height: 15rem;
+  }
+  &__fork, &__knife {
+    width: 4rem;
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 20px;
+  }
+
+  .hookFish {
+    position: absolute;
+    left: 30%;
+    transform: translate(-30%);
+    &__fish2, &__fishHookWorm {
+      transform: none;
+    }
     &__fish2 {
-      width: 400px;
-      height: 400px;
-      top: 230px;
-      left: 44.5vw;
+      left: 34px;
     }
-    &__fishingHook {
-      width: 30vw;
-      height: 30vw;
-      left: 30vw;
+    &__fishHookWorm {
+      left: 0;
     }
-    &__worm {
-      width: 3vw;
-      height: 3vw;
-      top: 25.5vw;
-      left: 45.1vw;
-    }
-    &__text5 {
-    }
-    // Section 6 elements
+  }
+  // Section 6 elements
+  .section {
     &__cookedFish {
-      width: 40vw;
-      height: 40vw;
-      top: 9vw;
-      left: 17vw;
-      transform: none;
+      width: 14rem;
+      height: 6rem;
+      top: 9.5rem;
     }
+  }
+  .dinner {
     &__dinnerPlate {
-      width: 45vw;
-      height: 45vw;
-      top: 5vw;
-      left: 10vw;
-      transform: none;
+      width: 20rem;
+      height: 20rem;
     }
-    &__fork {
-      width: 35vw;
-      height: 35vw;
-      top: 11vw;
-      right: 76vw;
-    }
-    &__knife {
-      width: 35vw;
-      height: 35vw;
-      top: 11vw;
-      left: 41vw;
-    }
-    &__text6 {
-      width: 34vw;
-      top: 4vw;
-      right: 3vw;
+    &__fork, &__knife {
+      width: 4.5rem;
+      height: 16rem;
     }
   }
 }
 
-@media screen and (min-width: 1550px) {
-  .section {
-    // Section 6 elements
-    &__cookedFish {
-      width: 619px;
-      height: 619px;
-      top: 140px;
-      left: 263px;
-      transform: none;
-    }
-    &__dinnerPlate {
-      width: 697px;
-      height: 697px;
-      top: 77px;
-      left: 155px;
-      transform: none;
-    }
-    &__fork {
-      width: 100px;
-      height: 543px;
-      top: 170px;
-      left: 51px;
-    }
-    &__knife {
-      width: 100px;
-      height: 543px;
-      top: 170px;
-      left: 856px;
-    }
-    &__text6 {
-      width: 34vw;
-      top: 4vw;
-      right: 3vw;
-    }
+@media screen and (min-width: 1400px) {
+  .hookFish {
+    left: 40%;
+    transform: translate(-40%);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .hookFish {
+    left: 45%;
+    transform: translate(-45%);
   }
 }
