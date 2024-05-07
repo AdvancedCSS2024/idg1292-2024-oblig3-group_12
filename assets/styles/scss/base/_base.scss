@@ -16,20 +16,38 @@
   }
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
 .section {
   width: 100vw;
   height: 100vh;
   color: $white;
+  a {
+    color: $white;
+  }
   display: flex;
   position: relative;
   overflow: hidden;
+  scroll-snap-align: start;
   img {
     position: absolute;
   }
   &#section1, &#section2 {
     background: linear-gradient(lightskyblue, blue);
   }
-  &#section3, &#section4, &#section5 {
+  &#section3, &#section4, &#section5, &#section7 {
     background: linear-gradient($ocean1, $ocean2);
   }
   &#section5 {
@@ -54,11 +72,26 @@
     transform: translate(-50%);
   }
   &__text6 {
+    max-height: 382px;
+  }
+  &__text6 {
     position: absolute;
-    bottom: 4%;
     width: 100vw;
+    bottom: 4%;
     left: 50%;
     transform: translate(-50%);
+  }
+  // Section 7 elements
+  &__sources {
+    width: 1000px;
+    margin-inline: auto;
+    padding-block: 2rem;
+    h1 {
+      margin-bottom: 1rem;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
@@ -73,9 +106,8 @@
   }
   &__fishHookWorm {
     width: 3.5rem;
-    height: 30rem;
+    height: 19.4rem;
     left: 5rem;
-    top: -11rem;
   }
 }
 
@@ -136,6 +168,17 @@
       width: 4.5rem;
       height: 16rem;
     }
+  }
+}
+
+@media screen and (min-width: 870px) {
+  .section {
+    &__cookedFish {
+      top: 11.5rem;
+    }
+  }
+  .dinner {
+    top: 4rem;
   }
 }
 

@@ -6,9 +6,15 @@
   font-display: swap;
 }
 
-p {
-  font-size: 37px;
+h1, p, a {
   padding-inline: 1rem;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+p, a {
+  font-size: 30px;
+}
