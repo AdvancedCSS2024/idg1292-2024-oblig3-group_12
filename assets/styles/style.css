@@ -5,12 +5,23 @@
   font-family: "BubblegumSans";
 }
 
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 11.5px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 11.5px;
+  }
+}
 #fact-3 {
-  max-width: 30rem;
-  max-height: 10rem;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  color: #b8b8b8;
+  color: #FFFFFF;
 }
 
 .section-3 {
@@ -105,4 +116,9 @@
   src: local("Bubblegum Sans"), local("BubblegumSans-Regular"), url("/assets/fonts/BubblegumSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
+}
+p {
+  font-size: 37px;
+  padding-inline: 1rem;
+  max-width: 1200px;
 }/*# sourceMappingURL=style.css.map */
