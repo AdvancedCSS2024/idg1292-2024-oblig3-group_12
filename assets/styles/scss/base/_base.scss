@@ -1,4 +1,5 @@
 // global reset
+@use "../utilities/variables" as *;
 
 * {
   margin: 0;
@@ -7,4 +8,26 @@
 
   // apply font-family to all elements
   font-family: "BubblegumSans";
+
+  // Hide scrollbar
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  color: $white;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+  }
+  &#section1,
+  &#section2 {
+    background: linear-gradient(lightskyblue, blue);
+  }
 }
