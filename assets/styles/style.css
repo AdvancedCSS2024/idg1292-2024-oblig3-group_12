@@ -15,6 +15,10 @@ html, body {
   overflow: hidden;
 }
 
+body {
+  background-image: linear-gradient(to bottom, #07319D 0%, #030F2E 100%);
+}
+
 .container {
   max-height: 100vh;
   overflow-y: scroll;
@@ -26,23 +30,19 @@ html, body {
 .section {
   width: 100vw;
   height: 100vh;
-  color: white;
   display: flex;
   position: relative;
   overflow: hidden;
   scroll-snap-align: start;
-}
-.section a {
-  color: white;
+  /*&#section1, &#section2 {
+    background: linear-gradient(lightskyblue, blue);
+  }
+  &#section3, &#section4, &#section5, &#section7 {
+    background: linear-gradient($ocean1, $ocean2);
+  }*/
 }
 .section img {
   position: absolute;
-}
-.section#section1, .section#section2 {
-  background: linear-gradient(lightskyblue, blue);
-}
-.section#section3, .section#section4, .section#section5, .section#section7 {
-  background: linear-gradient(#07319D, #030F2E);
 }
 .section#section5 {
   justify-content: center;
@@ -177,6 +177,7 @@ html, body {
   font-display: swap;
 }
 h1, p, a {
+  color: white;
   padding-inline: 1rem;
   max-width: 1000px;
 }
