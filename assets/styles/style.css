@@ -45,7 +45,7 @@ p {
 }
 .section-1__surface #sun {
   border-radius: 50%;
-  top: -3rem;
+  top: -2rem;
   left: -2rem;
   width: 8em;
   position: absolute;
@@ -62,9 +62,18 @@ p {
 }
 .section-1__ocean {
   height: 43%;
-  background-color: linear-gradient(#07319d, #030f2e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem;
+  align-self: center;
+  flex-wrap: wrap;
+  width: 10rem;
+  transform: translate(-9rem);
 }
-
+.section-1__ocean img {
+  width: 1.5rem;
+}
 @font-face {
   font-family: "BubblegumSans";
   src: local("Bubblegum Sans"), local("BubblegumSans-Regular"), url("/assets/fonts/BubblegumSans-Regular.woff2") format("woff2");
