@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
+//coded with help from ChatGPT
+document.addEventListener('DOMContentLoaded', function() {;
   const fish = document.querySelector('.fish');
   const microplastics = document.querySelectorAll('.microplastic');
 
