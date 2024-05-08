@@ -19,6 +19,33 @@ body {
   background-image: linear-gradient(to bottom, #07319D 0%, #030F2E 100%);
 }
 
+.scrollNavigation {
+  position: fixed;
+  right: 2rem;
+  bottom: 10rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.scrollNavigation button {
+  background-color: white;
+  border: none;
+  padding: 1.2rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.scrollNavigation button:hover {
+  background-color: #eaeaea;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .container {
   max-height: 100vh;
   overflow-y: scroll;
@@ -34,21 +61,21 @@ body {
   position: relative;
   overflow: hidden;
   scroll-snap-align: start;
-  /*&#section1, &#section2 {
+  /*&#section-1, &#section-2 {
     background: linear-gradient(lightskyblue, blue);
   }
-  &#section3, &#section4, &#section5, &#section7 {
+  &#section-3, &#section-4, &#section-5, &#section-7 {
     background: linear-gradient($ocean1, $ocean2);
   }*/
 }
 .section img {
   position: absolute;
 }
-.section#section5 {
+.section#section-5 {
   justify-content: center;
   text-align: center;
 }
-.section#section6 {
+.section#section-6 {
   background-color: #4A2800;
 }
 .section__text5 {
@@ -73,7 +100,7 @@ body {
   left: 50%;
   transform: translate(-50%);
 }
-.section__sources {
+.section__textblock {
   width: 1000px;
   margin-inline: auto;
   padding-block: 2rem;
@@ -81,7 +108,7 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
-.section__sources h1 {
+.section__textblock h1 {
   margin-bottom: 1rem;
 }
 
@@ -158,25 +185,13 @@ body {
     top: 4rem;
   }
 }
-@media screen and (min-width: 1400px) {
-  .hookFish {
-    left: 40%;
-    transform: translate(-40%);
-  }
-}
-@media screen and (min-width: 2000px) {
-  .hookFish {
-    left: 45%;
-    transform: translate(-45%);
-  }
-}
 @font-face {
   font-family: "BubblegumSans";
   src: local("Bubblegum Sans"), local("BubblegumSans-Regular"), url("/assets/fonts/BubblegumSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
 }
-h1, p, a {
+h1, p, a, ul {
   color: white;
   padding-inline: 1rem;
   max-width: 1000px;
@@ -186,6 +201,15 @@ h1 {
   font-size: 40px;
 }
 
-p, a {
+p, a, li {
   font-size: 30px;
+}
+
+a:hover {
+  color: #eaeaea;
+}
+
+li {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }

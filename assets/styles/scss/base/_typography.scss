@@ -1,3 +1,5 @@
+@use "../utilities/variables" as *;
+
 @font-face {
   font-family: "BubblegumSans";
   src: local("Bubblegum Sans"), local("BubblegumSans-Regular"),
@@ -6,8 +8,8 @@
   font-display: swap;
 }
 
-h1, p, a {
-  color: white;
+h1, p, a, ul {
+  color: $white;
   padding-inline: 1rem;
   max-width: 1000px;
 }
@@ -16,6 +18,15 @@ h1 {
   font-size: 40px;
 }
 
-p, a {
+p, a, li {
   font-size: 30px;
+}
+
+a:hover {
+  color: $white-hover;
+}
+
+li {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }

@@ -30,8 +30,8 @@ body {
   max-height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
 .section {
@@ -44,54 +44,14 @@ body {
   img {
     position: absolute;
   }
-  /*&#section1, &#section2 {
-    background: linear-gradient(lightskyblue, blue);
-  }
-  &#section3, &#section4, &#section5, &#section7 {
-    background: linear-gradient($ocean1, $ocean2);
-  }*/
-  &#section5 {
+  // Section 5 elements
+  &#section-5 {
     justify-content: center;
     text-align: center;
   }
-  &#section6 {
-    background-color: $wood;
-  }
-  // Section 5 elements
   &__text5 {
     align-self: flex-end;
     margin-bottom: 40px;
-  }
-  // Section 6 elements
-  &__cookedFish {
-    z-index: 2;
-    width: 10.5rem;
-    height: 4.5rem;
-    top: 7.5rem;
-    left: 50%;
-    transform: translate(-50%);
-  }
-  &__text6 {
-    max-height: 382px;
-  }
-  &__text6 {
-    position: absolute;
-    width: 100vw;
-    bottom: 4%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-  // Section 7 elements
-  &__sources {
-    width: 1000px;
-    margin-inline: auto;
-    padding-block: 2rem;
-    h1 {
-      margin-bottom: 1rem;
-    }
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
   }
 }
 
@@ -111,32 +71,12 @@ body {
   }
 }
 
-// Section 6 elements
-.dinner {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  transform: translate(-50%);
-  img {
-    position: static;
-  }
-  &__dinnerPlate {
-    width: 15rem;
-    height: 15rem;
-  }
-  &__fork, &__knife {
-    width: 4rem;
-    height: 12rem;
-  }
-}
-
 @media screen and (min-width: 600px) {
   html {
     font-size: 20px;
   }
 
+  // Section 5 elements
   .hookFish {
     position: absolute;
     left: 30%;
@@ -150,48 +90,5 @@ body {
     &__fishHookWorm {
       left: 0;
     }
-  }
-  // Section 6 elements
-  .section {
-    &__cookedFish {
-      width: 14rem;
-      height: 6rem;
-      top: 9.5rem;
-    }
-  }
-  .dinner {
-    &__dinnerPlate {
-      width: 20rem;
-      height: 20rem;
-    }
-    &__fork, &__knife {
-      width: 4.5rem;
-      height: 16rem;
-    }
-  }
-}
-
-@media screen and (min-width: 870px) {
-  .section {
-    &__cookedFish {
-      top: 11.5rem;
-    }
-  }
-  .dinner {
-    top: 4rem;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .hookFish {
-    left: 40%;
-    transform: translate(-40%);
-  }
-}
-
-@media screen and (min-width: 2000px) {
-  .hookFish {
-    left: 45%;
-    transform: translate(-45%);
   }
 }
