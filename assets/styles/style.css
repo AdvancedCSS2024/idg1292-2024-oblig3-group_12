@@ -56,7 +56,7 @@
 .section-4 .fish {
   position: absolute;
   top: 7rem;
-  animation: swim 15s infinite ease-in-out;
+  animation: swim 10s infinite ease-in-out;
 }
 .section-4 #floating {
   animation: float 4s ease-in-out infinite;
@@ -70,7 +70,7 @@
 
 @keyframes swim {
   from {
-    right: -100%;
+    right: -150%;
   }
   to {
     right: 100%;

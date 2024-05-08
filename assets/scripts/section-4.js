@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
           fishRect.left < microRect.right &&
           fishRect.bottom > microRect.top &&
           fishRect.top < microRect.bottom) {
-        if (microplastic.style.visibility !== 'hidden') { // Check if it's already hidden to avoid re-hiding
+        if (microplastic.style.visibility !== 'hidden') {
           microplastic.style.visibility = 'hidden';
 
           // Increase the timeout duration here
           setTimeout(() => {
-            microplastic.style.visibility = 'visible'; // Restore visibility after 3 seconds, for example
-          }, 3000); // Change this to any duration you prefer, here set to 3000 milliseconds (3 seconds)
+            microplastic.style.visibility = 'visible';
+          }, 2000);
         }
       }
     });

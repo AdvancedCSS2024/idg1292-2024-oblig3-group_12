@@ -70,7 +70,7 @@
   .fish {
     position: absolute;
     top: 7rem;
-    animation: swim 15s infinite ease-in-out;
+    animation: swim 10s infinite ease-in-out;
   }
 
   #floating {
@@ -88,7 +88,7 @@
   }
   @keyframes swim {
     from {
-      right: -100%;
+      right: -150%;
     }
     to {
       right: 100%
