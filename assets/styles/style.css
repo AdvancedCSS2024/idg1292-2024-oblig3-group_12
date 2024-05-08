@@ -17,19 +17,27 @@ body {
   height: 100vh;
 }
 
-p {
-  font-size: 37px;
-  padding-inline: 1rem;
-  max-width: 1200px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 .section-1 {
   width: 100vw;
   height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
-  background-color: gradient(#07319d, #030f2e);
+}
+.section-1__text {
+  font-size: 2rem;
+  padding-inline: 1rem;
+  max-width: 1200px;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  opacity: 0;
 }
 .section-1__surface {
   display: flex;
@@ -37,7 +45,7 @@ p {
   flex-direction: column;
   align-items: center;
   padding-top: 7rem;
-  height: 57%;
+  height: 60%;
   background-color: #5f8cff;
   position: relative;
   overflow: hidden;
@@ -61,7 +69,7 @@ p {
   text-align: center;
 }
 .section-1__ocean {
-  height: 43%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;

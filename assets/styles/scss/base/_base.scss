@@ -24,10 +24,13 @@ body {
   height: 100vh;
 }
 
-p {
-  font-size: 37px;
-  padding-inline: 1rem;
-  max-width: 1200px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .section-1 {
@@ -36,7 +39,14 @@ p {
   color: $white;
   display: flex;
   flex-direction: column;
-  background-color: gradient($ocean1, $ocean2);
+
+  &__text {
+      font-size: 2rem;
+      padding-inline: 1rem;
+      max-width: 1200px;
+      animation: fadeIn 1.5s ease-in-out forwards;
+      opacity: 0; // Start with text hidden
+  }
 
   &__surface {
     display: flex;
@@ -45,7 +55,7 @@ p {
     align-items: center;
 
     padding-top: 7rem;
-    height: 57%;
+    height: 60%;
     background-color: $sky;
     position: relative;
     overflow: hidden;
@@ -69,8 +79,9 @@ p {
       text-align: center;
     }
   }
+  
   &__ocean {
-    height: 43%;
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
