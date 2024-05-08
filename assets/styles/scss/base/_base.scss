@@ -16,27 +16,59 @@
   }
 }
 
+body {
+  background-image: linear-gradient(to bottom, $ocean1 0%, $ocean2 100%);
+}
+
 .section {
+  height: 100vh;
+}
+
+p {
+  font-size: 37px;
+  padding-inline: 1rem;
+  max-width: 1200px;
+}
+
+.section-1 {
   width: 100vw;
   height: 100vh;
   color: $white;
   display: flex;
-  position: relative;
-  overflow: hidden;
-  img {
-    position: absolute;
-  }
+  flex-direction: column;
+  background-color: gradient($ocean1, $ocean2);
 
-  #section1 {
+  &__surface {
     display: flex;
-    flex-direction: column;
-  }
-
-  &__sky {
-    // height: 50vh;
+    justify-content: center;
+    height: 57%;
     background-color: $sky;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+
+    #sun {
+      border-radius: 50%;
+      top: -3rem;
+      left: -2rem;
+      width: 8em;
+      position: absolute;
+    }
+    #boat {
+      align-self: flex-end;
+      width: 15rem;
+      margin: -0.5rem;
+    }
+    &p {
+      p {
+        font-size: 37px;
+        padding-inline: 1rem;
+        max-width: 1200px;
+      }
+    }
   }
   &__ocean {
-    background-color: $ocean1;
+    height: 43%;
+    background-color: linear-gradient($ocean1, $ocean2);
   }
 }
