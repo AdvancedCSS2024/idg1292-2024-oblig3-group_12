@@ -25,14 +25,6 @@ body {
   height: 100vh;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .section-1 {
   width: 100vw;
   height: 100vh;
@@ -65,6 +57,7 @@ body {
   left: -2rem;
   width: 8em;
   position: absolute;
+  box-shadow: "0 0 20px 10px rgba(25, 203, 68, 0.8)";
 }
 .section-1__surface #boat {
   width: 15rem;
@@ -89,6 +82,18 @@ body {
 }
 .section-1__ocean img {
   width: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-1 #boat {
+    width: 20rem;
+  }
+  .section-1 .section-1__text {
+    font-size: 2.5rem;
+  }
+  .section-1 img {
+    width: 2rem;
+  }
 }
 @font-face {
   font-family: "BubblegumSans";
