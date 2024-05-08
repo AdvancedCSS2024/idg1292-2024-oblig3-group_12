@@ -23,10 +23,10 @@ body {
 
 .section {
   height: 100vh;
-  
+
 }
 
-.section-1 {
+.section-1-2 {
   width: 100vw;
   height: 100vh;
   color: $white;
@@ -92,11 +92,11 @@ body {
 }
 
 @media (min-width: 768px) {
-  .section-1 {
+  .section-1-2 {
     #boat {
       width: 20rem; // Increase boat size on desktop
     }
-    .section-1__text {
+    .section-1-2__text {
       font-size: 2.5rem;
     }
     img {

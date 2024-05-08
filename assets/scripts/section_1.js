@@ -13,7 +13,7 @@ function initScrollAnimations() {
   // Implement text animations and trash falling effect
   const mainTimeline = gsap.timeline({
     scrollTrigger: {
-      trigger: "#section-1",
+      trigger: "#section-1-2",
       start: "top top",
       end: "200% bottom",
       scrub: true,
@@ -24,13 +24,13 @@ function initScrollAnimations() {
 
   // Fade in and update text content
   mainTimeline
-    .fromTo(".section-1__text", { opacity: 0 }, { opacity: 1, duration: 1 })
+    .fromTo(".section-1-2__text", { opacity: 0 }, { opacity: 1, duration: 1 })
     .addLabel("textUpdate1")
     .to(
-      ".section-1__text",
+      ".section-1-2__text",
       {
         onStart: () => {
-          document.querySelector(".section-1__text").textContent =
+          document.querySelector(".section-1-2__text").textContent =
             "There’s so much junk at sea, the debris has formed giant garbage patches.";
         },
         duration: 0.5,
@@ -39,10 +39,10 @@ function initScrollAnimations() {
     )
     .addLabel("textUpdate2")
     .to(
-      ".section-1__text",
+      ".section-1-2__text",
       {
         onStart: () => {
-          document.querySelector(".section-1__text").textContent =
+          document.querySelector(".section-1-2__text").textContent =
             "There are five of them around the world, and the largest — the Great Pacific Garbage Patch — includes an estimated 1.8 trillion pieces of trash and covers an area twice the size of Texas.";
         },
         duration: 0.5,
