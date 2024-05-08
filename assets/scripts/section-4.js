@@ -2,26 +2,27 @@ document.addEventListener('DOMContentLoaded', function() {
   const fish = document.querySelector('.fish');
   const microplastics = document.querySelectorAll('.microplastic');
 
-  microplastics.forEach(microplastic => {
-      const originalStyle = microplastic.style.cssText;
+  function checkCollision() {
+    microplastics.forEach(microplastic => {
+      const fishRect = fish.getBoundingClientRect();
+      const microRect = microplastic.getBoundingClientRect();
 
-      function checkCollision() {
-          const fishRect = fish.getBoundingClientRect();
-          const microRect = microplastic.getBoundingClientRect();
+      if (fishRect.right > microRect.left &&
+          fishRect.left < microRect.right &&
+          fishRect.bottom > microRect.top &&
+          fishRect.top < microRect.bottom) {
+        if (microplastic.style.visibility !== 'hidden') { // Check if it's already hidden to avoid re-hiding
+          microplastic.style.visibility = 'hidden';
 
-          if (fishRect.right > microRect.left &&
-              fishRect.left < microRect.right &&
-              fishRect.bottom > microRect.top &&
-              fishRect.top < microRect.bottom) {
-              microplastic.style.visibility = 'hidden'; 
-
-              setTimeout(() => {
-                  microplastic.style.cssText = originalStyle; 
-                  microplastic.style.visibility = 'visible'; 
-              }, 1000);
-          }
+          // Increase the timeout duration here
+          setTimeout(() => {
+            microplastic.style.visibility = 'visible'; // Restore visibility after 3 seconds, for example
+          }, 3000); // Change this to any duration you prefer, here set to 3000 milliseconds (3 seconds)
+        }
       }
+    });
+    requestAnimationFrame(checkCollision); // Continue the loop
+  }
 
-      setInterval(checkCollision, 5300);
-  });
+  requestAnimationFrame(checkCollision); // Start the collision detection loop
 });
