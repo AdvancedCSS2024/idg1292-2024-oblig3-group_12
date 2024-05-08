@@ -40,7 +40,11 @@ p {
 
   &__surface {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 7rem;
     height: 57%;
     background-color: $sky;
     position: relative;
@@ -55,16 +59,14 @@ p {
       position: absolute;
     }
     #boat {
-      align-self: flex-end;
       width: 15rem;
       margin: -0.5rem;
     }
     &p {
-      p {
-        font-size: 37px;
-        padding-inline: 1rem;
-        max-width: 1200px;
-      }
+      font-size: 2rem;
+      padding-inline: 1rem;
+      padding-top: 20rem;
+      text-align: center;
     }
   }
   &__ocean {

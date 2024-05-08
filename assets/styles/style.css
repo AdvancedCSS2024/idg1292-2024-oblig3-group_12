@@ -33,7 +33,10 @@ p {
 }
 .section-1__surface {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7rem;
   height: 57%;
   background-color: #5f8cff;
   position: relative;
@@ -48,14 +51,14 @@ p {
   position: absolute;
 }
 .section-1__surface #boat {
-  align-self: flex-end;
   width: 15rem;
   margin: -0.5rem;
 }
-.section-1__surfacep p {
-  font-size: 37px;
+.section-1__surfacep {
+  font-size: 2rem;
   padding-inline: 1rem;
-  max-width: 1200px;
+  padding-top: 20rem;
+  text-align: center;
 }
 .section-1__ocean {
   height: 43%;
