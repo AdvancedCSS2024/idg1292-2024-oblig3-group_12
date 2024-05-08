@@ -12,7 +12,7 @@
 
 @media screen and (min-width: 600px) {
   html {
-      font-size: 40px;
+      font-size: 30px;
   }
 }
 
@@ -58,20 +58,19 @@
     margin-top: 3.5rem;
   }
 
-  & .Microplastic {
+  & .microplastic {
     display: flex;
     justify-content: center;
     margin-top: 5rem;
     margin-bottom: 4rem;
   }
+  
 
 
-    & .fish {
+  .fish {
     position: absolute;
     top: 7rem;
-    width: 100px;
-    right: -150px;
-    animation: swim 3s forwards;
+    animation: swim 10s infinite ease-in-out;
   }
 
   #floating {
@@ -92,7 +91,7 @@
       right: -100%;
     }
     to {
-      right: 55%
+      right: 100%
     }
   }
 
