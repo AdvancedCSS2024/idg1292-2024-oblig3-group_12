@@ -116,20 +116,6 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  .section-1-2 {
-    #boat {
-      width: 20rem; // Increase boat size on desktop
-    }
-    .section-1-2__text {
-      font-size: 2rem;
-    }
-    img {
-      width: 2rem;
-    }
-  }
-}
-
 // Section 5 elements
 .hookFish {
   &__fish2 {
@@ -165,60 +151,6 @@ body {
   &__knife {
     width: 4rem;
     height: 12rem;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  html {
-    font-size: 30px;
-  }
-  // Section 5 elements
-  .hookFish {
-    position: absolute;
-    left: 30%;
-    transform: translate(-30%);
-    &__fish2,
-    &__fishHookWorm {
-      transform: none;
-    }
-    &__fish2 {
-      left: 34px;
-    }
-    &__fishHookWorm {
-      left: 0;
-    }
-  }
-  .section {
-    &__cookedFish {
-      z-index: 2;
-      width: 10.5rem;
-      height: 4.5rem;
-      top: 7.5rem;
-      left: 50%;
-      transform: translate(-50%);
-    }
-    &__text6 {
-      max-height: 382px;
-    }
-    &__text6 {
-      position: absolute;
-      width: 100vw;
-      bottom: 4%;
-      left: 50%;
-      transform: translate(-50%);
-    }
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  html {
-    font-size: 45px;
-  }
-}
-
-@media screen and (min-width: 2000px) {
-  html {
-    font-size: 55px;
   }
 }
 
@@ -284,69 +216,6 @@ body {
   }
 }
 
-@media screen and (min-width: 600px) {
-  html {
-    font-size: 20px;
-  }
-  // Section 5 elements
-  .hookFish {
-    position: absolute;
-    left: 30%;
-    transform: translate(-30%);
-    &__fish2,
-    &__fishHookWorm {
-      transform: none;
-    }
-    &__fish2 {
-      left: 34px;
-    }
-    &__fishHookWorm {
-      left: 0;
-    }
-  }
-  // Section 6 elements
-  .section {
-    &__cookedFish {
-      width: 14rem;
-      height: 6rem;
-      top: 9.5rem;
-    }
-  }
-  .dinner {
-    &__dinnerPlate {
-      width: 20rem;
-      height: 20rem;
-    }
-    &__fork,
-    &__knife {
-      width: 4.5rem;
-      height: 16rem;
-    }
-  }
-}
-
-@media screen and (min-width: 870px) {
-  .section {
-    &__cookedFish {
-      top: 11.5rem;
-    }
-  }
-  .dinner {
-    top: 4rem;
-  }
-}
-
-// @media screen and (min-width: 1400px) {
-//   html {
-//     font-size: 40px;
-//   }
-// }
-
-// @media screen and (min-width: 2000px) {
-//   html {
-//     font-size: 55px;
-//   }
-// }
 #fact-3,
 #fact-4 {
   color: #ffffff;
@@ -360,7 +229,6 @@ body {
 .section-4 {
   width: 100vw;
   height: 100vh;
-  // background: linear-gradient($ocean1, $ocean2);
   position: relative;
   overflow: hidden;
 
@@ -454,5 +322,83 @@ body {
   }
   100% {
     transform: translateY(0) rotate(180deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .section-1-2 {
+    #boat {
+      width: 20rem; // Increase boat size on desktop
+    }
+    .section-1-2__text {
+      font-size: 2rem;
+    }
+    img {
+      width: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 55px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 20px;
+  }
+  // Section 5 elements
+  .hookFish {
+    position: absolute;
+    left: 30%;
+    transform: translate(-30%);
+    &__fish2,
+    &__fishHookWorm {
+      transform: none;
+    }
+    &__fish2 {
+      left: 34px;
+    }
+    &__fishHookWorm {
+      left: 0;
+    }
+  }
+  // Section 6 elements
+  .section {
+    &__cookedFish {
+      width: 14rem;
+      height: 6rem;
+      top: 9.5rem;
+    }
+  }
+  .dinner {
+    &__dinnerPlate {
+      width: 20rem;
+      height: 20rem;
+    }
+    &__fork,
+    &__knife {
+      width: 4.5rem;
+      height: 16rem;
+    }
+  }
+}
+
+@media screen and (min-width: 870px) {
+  .section {
+    &__cookedFish {
+      top: 11.5rem;
+    }
+  }
+  .dinner {
+    top: 4rem;
   }
 }

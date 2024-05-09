@@ -107,17 +107,6 @@ body {
   width: 1.5rem;
 }
 
-@media (min-width: 768px) {
-  .section-1-2 #boat {
-    width: 20rem;
-  }
-  .section-1-2 .section-1-2__text {
-    font-size: 2rem;
-  }
-  .section-1-2 img {
-    width: 2rem;
-  }
-}
 .hookFish__fish2 {
   z-index: 2;
   width: 18rem;
@@ -151,53 +140,6 @@ body {
   height: 12rem;
 }
 
-@media screen and (min-width: 600px) {
-  html {
-    font-size: 30px;
-  }
-  .hookFish {
-    position: absolute;
-    left: 30%;
-    transform: translate(-30%);
-  }
-  .hookFish__fish2, .hookFish__fishHookWorm {
-    transform: none;
-  }
-  .hookFish__fish2 {
-    left: 34px;
-  }
-  .hookFish__fishHookWorm {
-    left: 0;
-  }
-  .section__cookedFish {
-    z-index: 2;
-    width: 10.5rem;
-    height: 4.5rem;
-    top: 7.5rem;
-    left: 50%;
-    transform: translate(-50%);
-  }
-  .section__text6 {
-    max-height: 382px;
-  }
-  .section__text6 {
-    position: absolute;
-    width: 100vw;
-    bottom: 4%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-}
-@media screen and (min-width: 1400px) {
-  html {
-    font-size: 45px;
-  }
-}
-@media screen and (min-width: 2000px) {
-  html {
-    font-size: 55px;
-  }
-}
 .section {
   width: 100vw;
   height: 100vh;
@@ -253,46 +195,6 @@ body {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 600px) {
-  html {
-    font-size: 20px;
-  }
-  .hookFish {
-    position: absolute;
-    left: 30%;
-    transform: translate(-30%);
-  }
-  .hookFish__fish2, .hookFish__fishHookWorm {
-    transform: none;
-  }
-  .hookFish__fish2 {
-    left: 34px;
-  }
-  .hookFish__fishHookWorm {
-    left: 0;
-  }
-  .section__cookedFish {
-    width: 14rem;
-    height: 6rem;
-    top: 9.5rem;
-  }
-  .dinner__dinnerPlate {
-    width: 20rem;
-    height: 20rem;
-  }
-  .dinner__fork, .dinner__knife {
-    width: 4.5rem;
-    height: 16rem;
-  }
-}
-@media screen and (min-width: 870px) {
-  .section__cookedFish {
-    top: 11.5rem;
-  }
-  .dinner {
-    top: 4rem;
-  }
-}
 #fact-3,
 #fact-4 {
   color: #ffffff;
@@ -394,6 +296,67 @@ body {
   }
   100% {
     transform: translateY(0) rotate(180deg);
+  }
+}
+@media (min-width: 768px) {
+  .section-1-2 #boat {
+    width: 20rem;
+  }
+  .section-1-2 .section-1-2__text {
+    font-size: 2rem;
+  }
+  .section-1-2 img {
+    width: 2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 55px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 20px;
+  }
+  .hookFish {
+    position: absolute;
+    left: 30%;
+    transform: translate(-30%);
+  }
+  .hookFish__fish2, .hookFish__fishHookWorm {
+    transform: none;
+  }
+  .hookFish__fish2 {
+    left: 34px;
+  }
+  .hookFish__fishHookWorm {
+    left: 0;
+  }
+  .section__cookedFish {
+    width: 14rem;
+    height: 6rem;
+    top: 9.5rem;
+  }
+  .dinner__dinnerPlate {
+    width: 20rem;
+    height: 20rem;
+  }
+  .dinner__fork, .dinner__knife {
+    width: 4.5rem;
+    height: 16rem;
+  }
+}
+@media screen and (min-width: 870px) {
+  .section__cookedFish {
+    top: 11.5rem;
+  }
+  .dinner {
+    top: 4rem;
   }
 }
 @font-face {
