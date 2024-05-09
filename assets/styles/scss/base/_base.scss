@@ -22,6 +22,14 @@ body {
   background-image: linear-gradient(to bottom, $ocean1 0%, $ocean2 100%);
 }
 
+.container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
 // Scroll buttons for keyboard users
 .scrollNavigation {
   position: fixed;
@@ -51,15 +59,77 @@ body {
   }
 }
 
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: start;
+  // Section 6 elements
+  &#section-6 {
+    background-color: $wood;
+  }
+  &#section-5,
+  &#section-6 {
+    img {
+      position: absolute;
+    }
+  }
+  // Section 5 elements
+  &#section-5 {
+    justify-content: center;
+    text-align: center;
+  }
+  &__text5 {
+    align-self: flex-end;
+    margin-bottom: 40px;
+  }
+  // Section 6 elements
+  &#section-6 {
+    background-color: $wood;
+  }
+  &__cookedFish {
+    z-index: 2;
+    width: 10.5rem;
+    height: 4.5rem;
+    top: 7.5rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  &__text6 {
+    max-height: 382px;
+  }
+  &__text6 {
+    position: absolute;
+    width: 100vw;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  // Section 7 and 8 elements
+  &__textblock {
+    width: 1000px;
+    margin-inline: auto;
+    padding-block: 2rem;
+    h1 {
+      margin-bottom: 1rem;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
 .section-1-2 {
   width: 100vw;
   height: 100vh;
   color: $white;
   display: flex;
   flex-direction: column;
-
+  scroll-snap-align: start;
   &__text {
-    font-size: 2em;
+    font-size: 1.5em;
     padding-inline: 1rem;
     max-width: 1200px;
     animation: fadeIn 1.5s ease-in-out forwards;
@@ -154,68 +224,6 @@ body {
   }
 }
 
-.section {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  scroll-snap-align: start;
-  // Section 6 elements
-  &#section-6 {
-    background-color: $wood;
-  }
-  &#section-5,
-  &#section-6 {
-    img {
-      position: absolute;
-    }
-  }
-  // Section 5 elements
-  &#section-5 {
-    justify-content: center;
-    text-align: center;
-  }
-  &__text5 {
-    align-self: flex-end;
-    margin-bottom: 40px;
-  }
-  // Section 6 elements
-  &#section-6 {
-    background-color: $wood;
-  }
-  &__cookedFish {
-    z-index: 2;
-    width: 10.5rem;
-    height: 4.5rem;
-    top: 7.5rem;
-    left: 50%;
-    transform: translate(-50%);
-  }
-  &__text6 {
-    max-height: 382px;
-  }
-  &__text6 {
-    position: absolute;
-    width: 100vw;
-    bottom: 4%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-  // Section 7 and 8 elements
-  &__textblock {
-    width: 1000px;
-    margin-inline: auto;
-    padding-block: 2rem;
-    h1 {
-      margin-bottom: 1rem;
-    }
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
-
 #fact-3,
 #fact-4 {
   color: #ffffff;
@@ -231,6 +239,7 @@ body {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  scroll-snap-align: start;
 
   & .svg-container {
     display: flex;
@@ -339,7 +348,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1400px) {
+/*@media screen and (min-width: 1400px) {
   html {
     font-size: 45px;
   }
@@ -349,7 +358,7 @@ body {
   html {
     font-size: 55px;
   }
-}
+}*/
 
 @media screen and (min-width: 600px) {
   html {

@@ -21,6 +21,14 @@ body {
   background-image: linear-gradient(to bottom, #07319d 0%, #030f2e 100%);
 }
 
+.container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
 .scrollNavigation {
   position: fixed;
   right: 2rem;
@@ -48,15 +56,71 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+.section#section-6 {
+  background-color: #4a2800;
+}
+.section#section-5 img, .section#section-6 img {
+  position: absolute;
+}
+.section#section-5 {
+  justify-content: center;
+  text-align: center;
+}
+.section__text5 {
+  align-self: flex-end;
+  margin-bottom: 40px;
+}
+.section#section-6 {
+  background-color: #4a2800;
+}
+.section__cookedFish {
+  z-index: 2;
+  width: 10.5rem;
+  height: 4.5rem;
+  top: 7.5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.section__text6 {
+  max-height: 382px;
+}
+.section__text6 {
+  position: absolute;
+  width: 100vw;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.section__textblock {
+  width: 1000px;
+  margin-inline: auto;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.section__textblock h1 {
+  margin-bottom: 1rem;
+}
+
 .section-1-2 {
   width: 100vw;
   height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
+  scroll-snap-align: start;
 }
 .section-1-2__text {
-  font-size: 2em;
+  font-size: 1.5em;
   padding-inline: 1rem;
   max-width: 1200px;
   animation: fadeIn 1.5s ease-in-out forwards;
@@ -140,61 +204,6 @@ body {
   height: 12rem;
 }
 
-.section {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  scroll-snap-align: start;
-}
-.section#section-6 {
-  background-color: #4a2800;
-}
-.section#section-5 img, .section#section-6 img {
-  position: absolute;
-}
-.section#section-5 {
-  justify-content: center;
-  text-align: center;
-}
-.section__text5 {
-  align-self: flex-end;
-  margin-bottom: 40px;
-}
-.section#section-6 {
-  background-color: #4a2800;
-}
-.section__cookedFish {
-  z-index: 2;
-  width: 10.5rem;
-  height: 4.5rem;
-  top: 7.5rem;
-  left: 50%;
-  transform: translate(-50%);
-}
-.section__text6 {
-  max-height: 382px;
-}
-.section__text6 {
-  position: absolute;
-  width: 100vw;
-  bottom: 4%;
-  left: 50%;
-  transform: translate(-50%);
-}
-.section__textblock {
-  width: 1000px;
-  margin-inline: auto;
-  padding-block: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.section__textblock h1 {
-  margin-bottom: 1rem;
-}
-
 #fact-3,
 #fact-4 {
   color: #ffffff;
@@ -210,6 +219,7 @@ body {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  scroll-snap-align: start;
 }
 .section-3 .svg-container,
 .section-4 .svg-container {
@@ -309,16 +319,17 @@ body {
     width: 2rem;
   }
 }
-@media screen and (min-width: 1400px) {
+/*@media screen and (min-width: 1400px) {
   html {
     font-size: 45px;
   }
 }
+
 @media screen and (min-width: 2000px) {
   html {
     font-size: 55px;
   }
-}
+}*/
 @media screen and (min-width: 600px) {
   html {
     font-size: 20px;
