@@ -11,12 +11,118 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "BubblegumSans";
-  scrollbar-width: none;
-}
-*::-webkit-scrollbar {
-  display: none;
 }
 
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 55px;
+  }
+}
+#fact-4 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.section-4 {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#07319d, #030f2e);
+  position: relative;
+  overflow: hidden;
+}
+.section-4 .svg-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 2.7rem;
+}
+.section-4 .svg-container-2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 3.5rem;
+}
+.section-4 .microplastic {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+.section-4 .fish {
+  position: absolute;
+  top: 7rem;
+  animation: swim 10s infinite ease-in-out;
+}
+.section-4 #floating {
+  animation: float 4s ease-in-out infinite;
+}
+.section-4 #floating-2 {
+  animation: float 6s ease-in-out infinite;
+}
+.section-4 #floating-3 {
+  animation: float 6s linear infinite;
+}
+
+@keyframes swim {
+  from {
+    right: -150%;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes float_2 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10px, -20px) rotate(-10deg);
+  }
+  50% {
+    transform: translate(0px, -30px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-10px, -20px) rotate(10deg);
+  }
+}
+@keyframes float_3 {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(0) rotate(90deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(135deg);
+  }
+  100% {
+    transform: translateY(0) rotate(180deg);
+  }
+}
 body {
   background-image: linear-gradient(to bottom, #07319d 0%, #030f2e 100%);
 }
@@ -110,7 +216,7 @@ body {
     font-size: 55px;
   }
 }
-#fact-3 {
+#fact-3, #fact-4 {
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 1rem;
@@ -118,140 +224,43 @@ body {
   justify-content: center;
 }
 
-.section-3 {
+.section-3, .section-4 {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(#07319d, #030f2e);
   position: relative;
   overflow: hidden;
 }
-.section-3 .svg-container {
+.section-3 .svg-container, .section-4 .svg-container {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   margin-top: 2.7rem;
 }
-.section-3 .svg-container-2 {
+.section-3 .svg-container-2, .section-4 .svg-container-2 {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   margin-top: 7.5rem;
 }
-.section-3 .Microplastic {
+.section-3 .microplastic, .section-4 .microplastic {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-.section-3 #floating {
-  animation: float 4s ease-in-out infinite;
-}
-.section-3 #floating-2 {
-  animation: float 6s ease-in-out infinite;
-}
-.section-3 #floating-3 {
-  animation: float 6s linear infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-@keyframes float_2 {
-  0%, 100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  25% {
-    transform: translate(10px, -20px) rotate(-10deg);
-  }
-  50% {
-    transform: translate(0px, -30px) rotate(0deg);
-  }
-  75% {
-    transform: translate(-10px, -20px) rotate(10deg);
-  }
-}
-@keyframes float_3 {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  25% {
-    transform: translateY(-15px) rotate(45deg);
-  }
-  50% {
-    transform: translateY(0) rotate(90deg);
-  }
-  75% {
-    transform: translateY(-15px) rotate(135deg);
-  }
-  100% {
-    transform: translateY(0) rotate(180deg);
-  }
-}
-@media screen and (min-width: 600px) {
-  html {
-    font-size: 30px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  html {
-    font-size: 45px;
-  }
-}
-@media screen and (min-width: 2000px) {
-  html {
-    font-size: 55px;
-  }
-}
-#fact-4 {
-  color: #FFFFFF;
-  text-align: center;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-.section-4 {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(#07319D, #030F2E);
-  position: relative;
-  overflow: hidden;
-}
-.section-4 .svg-container {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  margin-top: 2.7rem;
-}
-.section-4 .svg-container-2 {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  margin-top: 3.5rem;
-}
-.section-4 .microplastic {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
-  margin-bottom: 4rem;
-}
-.section-4 .fish {
+.section-3 .fish, .section-4 .fish {
   position: absolute;
   top: 7rem;
   animation: swim 10s infinite ease-in-out;
 }
-.section-4 #floating {
+.section-3 #floating, .section-4 #floating {
   animation: float 4s ease-in-out infinite;
 }
-.section-4 #floating-2 {
+.section-3 #floating-2, .section-4 #floating-2 {
   animation: float 6s ease-in-out infinite;
 }
-.section-4 #floating-3 {
+.section-3 #floating-3, .section-4 #floating-3 {
   animation: float 6s linear infinite;
 }
 

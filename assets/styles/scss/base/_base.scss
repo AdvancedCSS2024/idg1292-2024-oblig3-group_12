@@ -139,10 +139,11 @@
   
   // Hide scrollbar
 
-  scrollbar-width: none;{
+  scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
+
 }
 
 // background color
@@ -282,7 +283,7 @@ body {
     margin-top: 7.5rem;
   }
 
-  & .Microplastic {
+  & .microplastic {
     display: flex;
     justify-content: center;
     margin-top: 4rem;
