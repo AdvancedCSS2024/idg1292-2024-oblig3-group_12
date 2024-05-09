@@ -404,8 +404,25 @@ body {
   font-weight: 400;
   font-display: swap;
 }
-p {
-  font-size: 30px;
+h1, p, a, ul {
+  color: white;
   padding-inline: 1rem;
   max-width: 1000px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p, a, li {
+  font-size: 30px;
+}
+
+a:hover {
+  color: #eaeaea;
+}
+
+li {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
