@@ -14,6 +14,8 @@ Plastic that falls from a fishing boat and down to the bottom of the ocean. The 
 
 Life of a fish.
 
+Fish eats plastic like pac-man, going across the screen.
+
 Can click on some plastic to remove it from the ocean.
 
 Story follows plastic thrown from a fishing boat, goes down into the ocean and gets eaten by fish, fish gets caught in a fish hook and gets eaten by the person that threw the plastic the fish ate.
@@ -27,15 +29,29 @@ We created this simple storyboard in Figma to map out our Scrollytelling story.
 
 ## Getting started
 
-Instructions for getting started and link to Github pages.
+Open the root folder in Visual Studio Code. Use the Live Server plugin in for local host.
+
+[Link to Github pages host](https://advancedcss2024.github.io/idg1292-2024-oblig3-group_12/)
 
 ## Technology stack
 
-Technology stack employed and list of animations, interactions and observers implemented.
-
 ### List of animations
 
+GSAP animation for boat floating in the ocean,
+
+GSAP animation for garbage thrown out of boat,
+
+CSS keyframes for garbage under the sea,
+
+CSS keyframes for fish eating plastic,
+
+GSAP animation for fish getting caught.
+
 ### Interactions and observers implemented
+
+Intersection observer implemented for the scroll up/down buttons, does not work properly.
+
+Up/down buttons can be clicked on or activated with tab and enter keys to scroll up/down.
 
 ## Libraries used
 
