@@ -6,13 +6,18 @@
     <title>Scrollytelling</title>
     <link rel="stylesheet" href="assets/styles/style.css" />
     <!-- Import GSAP and ScrollTrigger plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <!-- Import styles -->
+        <link rel="stylesheet" href="assets/styles/style.css" />
+        <!-- Import scripts -->
     <script src="assets/scripts/section_1.js" defer></script>
     <script src="assets/scripts/section-4.js" defer></script>
+    <script src="assets/scripts/section_5.js" defer></script>
     <script src="assets/scripts/index.js" defer></script>
   </head>
   <body>
+      <div class="container">
     <section id="section-1-2" class="section-1-2">
       <div class="section-1-2__surface">
         <img
@@ -220,6 +225,27 @@
           </p>
         </div>
       </section>
+          <section class="section" id="section-5">
+                <div class="hookFish">
+                    <img
+                        loading="lazy"
+                        src="assets/svgs/fishing/fishhook&worm.svg"
+                        alt="Fishing hook"
+                        class="hookFish__fishHookWorm animateHookedFish"
+                    />
+                    <img
+                        loading="lazy"
+                        src="assets/svgs/fishing/Fish.svg"
+                        alt="Fish"
+                        class="hookFish__fish2 animateHookedFish"
+                    />
+                </div>
+                <p class="section__text5">
+                    1 in 3 fish caught for human consumption now contains
+                    plastic.
+                </p>
+            </section>
+      </div>
   </body>
 </html>
 
