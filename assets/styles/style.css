@@ -129,7 +129,7 @@ body {
   transform: translate(-50%);
 }
 .dinner img {
-  position: static;
+  position: static !important;
 }
 .dinner__dinnerPlate {
   width: 15rem;
@@ -386,4 +386,4 @@ a:hover {
 li {
   margin-left: 1rem;
   margin-bottom: 1rem;
-}/*# sourceMappingURL=style.css.map */
+}
