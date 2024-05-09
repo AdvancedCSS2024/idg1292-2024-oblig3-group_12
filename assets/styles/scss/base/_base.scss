@@ -9,6 +9,13 @@
   // apply font-family to all elements
 
   font-family: "BubblegumSans";
+
+  // Hide scrollbar
+
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 // Scroll buttons for keyboard users
@@ -94,28 +101,25 @@
     &__fishHookWorm {
       left: 0;
     }
-  }
-  // Section 6 elements
-  &#section-6 {
-    background-color: $wood;
-  }
-  &__cookedFish {
-    z-index: 2;
-    width: 10.5rem;
-    height: 4.5rem;
-    top: 7.5rem;
-    left: 50%;
-    transform: translate(-50%);
-  }
-  &__text6 {
-    max-height: 382px;
-  }
-  &__text6 {
-    position: absolute;
-    width: 100vw;
-    bottom: 4%;
-    left: 50%;
-    transform: translate(-50%);
+  }.section {
+    &__cookedFish {
+      z-index: 2;
+      width: 10.5rem;
+      height: 4.5rem;
+      top: 7.5rem;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &__text6 {
+      max-height: 382px;
+    }
+    &__text6 {
+      position: absolute;
+      width: 100vw;
+      bottom: 4%;
+      left: 50%;
+      transform: translate(-50%);
+    }
   }
 }
 
@@ -130,16 +134,6 @@
       font-size: 55px;
   }
 }
-  // Hide scrollbar
-
-  // Hide scrollbar
-
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-}
 // background color
 
 body {
@@ -153,6 +147,10 @@ body {
   position: relative;
   overflow: hidden;
   scroll-snap-align: start;
+  // Section 6 elements
+  &#section-6 {
+    background-color: $wood;
+  }
   &#section-5, &section-6 {
     img {
       position: absolute;
