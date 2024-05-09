@@ -7,6 +7,7 @@
   box-sizing: border-box;
 
   // apply font-family to all elements
+
   font-family: "BubblegumSans";
 }
 
@@ -94,6 +95,213 @@
       right: 100%
     }
   }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes float_2 {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(10px, -20px) rotate(-10deg);
+    }
+    50% {
+      transform: translate(0px, -30px) rotate(0deg);
+    }
+    75% {
+      transform: translate(-10px, -20px) rotate(10deg);
+    }
+  }
+
+  @keyframes float_3 {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-15px) rotate(45deg);
+    }
+    50% {
+      transform: translateY(0) rotate(90deg);
+    }
+    75% {
+      transform: translateY(-15px) rotate(135deg);
+    }
+    100% {
+      transform: translateY(0) rotate(180deg);
+    }
+  
+  // Hide scrollbar
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// background color
+
+body {
+  background-image: linear-gradient(to bottom, $ocean1 0%, $ocean2 100%);
+}
+
+.section {
+  height: 100vh;
+
+}
+
+.section-1-2 {
+  width: 100vw;
+  height: 100vh;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+      font-size: 2rem;
+      padding-inline: 1rem;
+      max-width: 1200px;
+      animation: fadeIn 1.5s ease-in-out forwards;
+      opacity: 0; // Start with text hidden
+  }
+
+  &__surface {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 7rem;
+    height: 60%;
+    background-color: $sky;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+
+    #sun {
+      border-radius: 50%;
+      top: -2rem;
+      left: -2rem;
+      width: 8em;
+      position: absolute;
+      box-shadow: "0 0 20px 10px rgba(25, 203, 68, 0.8)"
+    }
+    #boat {
+      width: 15rem;
+      margin: -0.5rem;
+    }
+    &p {
+      font-size: 2rem;
+      padding-inline: 1rem;
+      padding-top: 20rem;
+      text-align: center;
+    }
+  }
+  
+  &__ocean {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 10rem;
+    transform: translate(-9rem);
+
+    img {
+      width: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section-1-2 {
+    #boat {
+      width: 20rem; // Increase boat size on desktop
+    }
+    .section-1-2__text {
+      font-size: 2.5rem;
+    }
+    img {
+      width: 2rem;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+      font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+      font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+      font-size: 55px;
+  }
+}
+#fact-3 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+.section-3 {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient($ocean1,$ocean2);
+  position: relative;
+  overflow: hidden;
+
+  & .svg-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 2.7rem;
+    
+  }
+
+  & .svg-container-2  {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 7.5rem;
+  }
+
+  & .Microplastic {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  & #floating {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  & #floating-2 {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  & #floating-3 {
+    animation: float 6s linear infinite;
+  }
+
+  }
+
 
   @keyframes float {
     0%, 100% {
