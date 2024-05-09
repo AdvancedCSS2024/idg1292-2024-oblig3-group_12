@@ -138,7 +138,8 @@
     }
   
   // Hide scrollbar
-  scrollbar-width: none;
+
+  scrollbar-width: none;{
   &::-webkit-scrollbar {
     display: none;
   }
@@ -250,7 +251,7 @@ body {
       font-size: 55px;
   }
 }
-#fact-3 {
+#fact-3, #fact-4 {
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 1rem;
@@ -259,7 +260,7 @@ body {
 }
 
 
-.section-3 {
+.section-3, .section-4 {
   width: 100vw;
   height: 100vh;
   background: linear-gradient($ocean1,$ocean2);
@@ -288,6 +289,12 @@ body {
     margin-bottom: 4rem;
   }
 
+  .fish {
+    position: absolute;
+    top: 7rem;
+    animation: swim 10s infinite ease-in-out;
+  }
+
   & #floating {
     animation: float 4s ease-in-out infinite;
   }
@@ -302,6 +309,14 @@ body {
 
   }
 
+  @keyframes swim {
+    from {
+      right: -150%;
+    }
+    to {
+      right: 100%
+      }
+  }
 
   @keyframes float {
     0%, 100% {
