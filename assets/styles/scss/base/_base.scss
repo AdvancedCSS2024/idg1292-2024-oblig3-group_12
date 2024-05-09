@@ -11,6 +11,34 @@
   font-family: "BubblegumSans";
 }
 
+// Scroll buttons for keyboard users
+.scrollNavigation {
+  position: fixed;
+  right: 2rem;
+  bottom: 10rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  button {
+    background-color: $white;
+    border: none;
+    padding: 1.2rem;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: $white-hover;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+  }
+}
+
 // Section 5 elements
 .hookFish {
   &__fish2 {
