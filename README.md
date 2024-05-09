@@ -31,7 +31,7 @@ We created this simple storyboard in Figma to map out our Scrollytelling story.
 
 Open the root folder in Visual Studio Code. Use the Live Server plugin in for local host.
 
-**Link to Github pages**
+[Link to Github pages host](https://advancedcss2024.github.io/idg1292-2024-oblig3-group_12/)
 
 ## Technology stack
 
