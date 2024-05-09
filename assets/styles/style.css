@@ -17,6 +17,10 @@
   display: none;
 }
 
+body {
+  background-image: linear-gradient(to bottom, #07319d 0%, #030f2e 100%);
+}
+
 .scrollNavigation {
   position: fixed;
   right: 2rem;
@@ -44,6 +48,76 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.section-1-2 {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.section-1-2__text {
+  font-size: 2em;
+  padding-inline: 1rem;
+  max-width: 1200px;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+.section-1-2__surface {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7rem;
+  height: 60%;
+  background-color: #5f8cff;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+}
+.section-1-2__surface #sun {
+  border-radius: 50%;
+  top: -2rem;
+  left: -2rem;
+  width: 8em;
+  position: absolute;
+  box-shadow: "0 0 20px 10px rgba(25, 203, 68, 0.8)";
+}
+.section-1-2__surface #boat {
+  width: 15rem;
+  margin: -0.5rem;
+}
+.section-1-2__surfacep {
+  font-size: 2rem;
+  padding-inline: 1rem;
+  padding-top: 20rem;
+  text-align: center;
+}
+.section-1-2__ocean {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem;
+  align-self: center;
+  flex-wrap: wrap;
+  width: 10rem;
+  transform: translate(-9rem);
+}
+.section-1-2__ocean img {
+  width: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-1-2 #boat {
+    width: 20rem;
+  }
+  .section-1-2 .section-1-2__text {
+    font-size: 2rem;
+  }
+  .section-1-2 img {
+    width: 2rem;
+  }
+}
 .hookFish__fish2 {
   z-index: 2;
   width: 18rem;
@@ -124,10 +198,6 @@
     font-size: 55px;
   }
 }
-body {
-  background-image: linear-gradient(to bottom, #07319d 0%, #030f2e 100%);
-}
-
 .section {
   width: 100vw;
   height: 100vh;
@@ -139,7 +209,7 @@ body {
 .section#section-6 {
   background-color: #4a2800;
 }
-.section#section-5 img, .sectionsection-6 img {
+.section#section-5 img, .section#section-6 img {
   position: absolute;
 }
 .section#section-5 {
@@ -183,76 +253,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.section-1-2 {
-  width: 100vw;
-  height: 100vh;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-.section-1-2__text {
-  font-size: 2rem;
-  padding-inline: 1rem;
-  max-width: 1200px;
-  animation: fadeIn 1.5s ease-in-out forwards;
-  opacity: 0;
-}
-.section-1-2__surface {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 7rem;
-  height: 60%;
-  background-color: #5f8cff;
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-}
-.section-1-2__surface #sun {
-  border-radius: 50%;
-  top: -2rem;
-  left: -2rem;
-  width: 8em;
-  position: absolute;
-  box-shadow: "0 0 20px 10px rgba(25, 203, 68, 0.8)";
-}
-.section-1-2__surface #boat {
-  width: 15rem;
-  margin: -0.5rem;
-}
-.section-1-2__surfacep {
-  font-size: 2rem;
-  padding-inline: 1rem;
-  padding-top: 20rem;
-  text-align: center;
-}
-.section-1-2__ocean {
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10rem;
-  align-self: center;
-  flex-wrap: wrap;
-  width: 10rem;
-  transform: translate(-9rem);
-}
-.section-1-2__ocean img {
-  width: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .section-1-2 #boat {
-    width: 20rem;
-  }
-  .section-1-2 .section-1-2__text {
-    font-size: 2.5rem;
-  }
-  .section-1-2 img {
-    width: 2rem;
-  }
-}
 @media screen and (min-width: 600px) {
   html {
     font-size: 20px;
@@ -293,61 +293,59 @@ body {
     top: 4rem;
   }
 }
-@media screen and (min-width: 1400px) {
-  html {
-    font-size: 40px;
-  }
-}
-@media screen and (min-width: 2000px) {
-  html {
-    font-size: 55px;
-  }
-}
-#fact-3, #fact-4 {
-  color: #FFFFFF;
+#fact-3,
+#fact-4 {
+  color: #ffffff;
   text-align: center;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
 }
 
-.section-3, .section-4 {
+.section-3,
+.section-4 {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#07319d, #030f2e);
   position: relative;
   overflow: hidden;
 }
-.section-3 .svg-container, .section-4 .svg-container {
+.section-3 .svg-container,
+.section-4 .svg-container {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   margin-top: 2.7rem;
 }
-.section-3 .svg-container-2, .section-4 .svg-container-2 {
+.section-3 .svg-container-2,
+.section-4 .svg-container-2 {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   margin-top: 7.5rem;
 }
-.section-3 .microplastic, .section-4 .microplastic {
+.section-3 .microplastic,
+.section-4 .microplastic {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-.section-3 .fish, .section-4 .fish {
+.section-3 .fish,
+.section-4 .fish {
   position: absolute;
   top: 7rem;
   animation: swim 10s infinite ease-in-out;
 }
-.section-3 #floating, .section-4 #floating {
+.section-3 #floating,
+.section-4 #floating {
   animation: float 4s ease-in-out infinite;
 }
-.section-3 #floating-2, .section-4 #floating-2 {
+.section-3 #floating-2,
+.section-4 #floating-2 {
   animation: float 6s ease-in-out infinite;
 }
-.section-3 #floating-3, .section-4 #floating-3 {
+.section-3 #floating-3,
+.section-4 #floating-3 {
   animation: float 6s linear infinite;
 }
 
@@ -425,4 +423,4 @@ a:hover {
 li {
   margin-left: 1rem;
   margin-bottom: 1rem;
-}
+}/*# sourceMappingURL=style.css.map */
